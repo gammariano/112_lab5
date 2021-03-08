@@ -1,7 +1,27 @@
 #include<stdio.h>
-int UglyNumber(int n)
+int UglyNumber(int m)
 {
-
+    while(m!=1)
+    {
+        if(m%2==0)
+        {
+            m/=2;
+        }
+        else if(m%3==0)
+        {
+            m/=3;
+        }
+        else if(m%5==0)
+        {
+            m/=5;
+        }
+        else
+        {
+            return 1;
+            break;
+        }
+    }
+    return 0;
 }
 int main()
 {
