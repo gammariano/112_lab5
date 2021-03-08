@@ -13,7 +13,16 @@ int main()
     for(i=2;i<n*n*2;i++)
     {
         c=UglyNumber(i);
+        if(c==0)
+        {
+            num[m]=i;
+            m++;
+        }
+        else if(c==1)
+        {
 
+        }
     }
+    printf("%d" ,num[n-1]);
     return 0;
 }
