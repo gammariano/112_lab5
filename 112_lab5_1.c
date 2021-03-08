@@ -15,6 +15,16 @@ int main()
             b[x-2]-=b[x-1];
             x--;
         }
+        else if(!(strcmp(num,"+")))
+        {
+            b[x-2]+=b[x-1];
+            x--;
+        }
+        else if(!(strcmp(num,"*")))
+        {
+            b[x-2]*=b[x-1];
+            x--;
+        }
 
     }
 
