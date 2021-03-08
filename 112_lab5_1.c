@@ -5,6 +5,18 @@ int main()
     scanf("%d" ,&n);
     char num[n],a[n];
     int b[n];
+    for(i=0;i<n;i++)
+    {
+        b[x]=0;
+        scanf("%s" ,num);
+        j=strlen(num);
+        if(!(strcmp(num,"-")))
+        {
+            b[x-2]-=b[x-1];
+            x--;
+        }
+
+    }
 
     return 0;
 }
