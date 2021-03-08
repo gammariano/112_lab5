@@ -3,7 +3,6 @@ int main()
 {
     int i,j,k,l,n,m=0;
     scanf("%d" ,&n);
-    m=n;
     if(n%2==0)
     {
         n--;
@@ -14,11 +13,18 @@ int main()
     {
         k=((n+m)/2);
     }
-    for(i=1;i<=n;i++)
+    for(i=0;i<(n+m)/2;i++)
     {
-        for(j=1;j<=m-1;j++)
+        for(j=0;j<n;j++)
         {
-            printf("_");
+            if(j==(n/2)-i||j==(n/2)+i)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf("_");
+            }
         }
         for(k=0;k<=2*i-2;k++)
         {
@@ -26,7 +32,7 @@ int main()
         }
         for(l=1;l<m;l++)
         {
-            printf("_");
+
         }
         m--;
         printf("\n");
