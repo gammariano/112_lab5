@@ -25,6 +25,17 @@ int main()
             b[x-2]*=b[x-1];
             x--;
         }
+        else
+        {
+            for(k=0;k<j;k++)
+            {
+                y=j-k-1;
+                switch(y)
+                {
+                    case 0: b[x]+=(num[k]-48); break;
+                }
+            }
+        }
 
     }
 
