@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<math.h>
+#include<string.h>
 int main()
 {
     int n,i,j,k,x=0,y;
