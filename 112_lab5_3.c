@@ -1,7 +1,12 @@
 #include<stdio.h>
-int main()
+int UglyNumber(int n)
 {
 
-
+}
+int main()
+{
+    int n=150;
+    UglyNumber(n);
+    printf("%d" ,n);
     return 0;
 }
