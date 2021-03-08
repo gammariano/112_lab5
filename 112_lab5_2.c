@@ -26,15 +26,21 @@ int main()
                 printf("_");
             }
         }
-        for(k=0;k<=2*i-2;k++)
+        printf("\n");
+    }
+    for(i=0;i<=k;i++)
+    {
+        for(j=0;j<n;j++)
         {
-            printf("*");
+            if(j==i||j==(n-1)-i)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf("_");
+            }
         }
-        for(l=1;l<m;l++)
-        {
-
-        }
-        m--;
         printf("\n");
     }
     return 0;
